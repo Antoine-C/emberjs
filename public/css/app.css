@@ -6,3 +6,9 @@
 .columns+.columns:last-child {
   float: left;
 }
+
+/** Styles **/
+
+.large-3.columns {
+  height: 250px;
+}
