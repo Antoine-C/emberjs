@@ -2,6 +2,8 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
     model: function() {
-        return this.store.find('dribbles');
+        return this.store.filter('dribbles', {isNew: true}, function(dribbles) {
+          return dribbles.get('isNew');
+        });
     }
 });
