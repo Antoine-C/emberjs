@@ -8,9 +8,10 @@ var Router = Ember.Router.extend({
 Router.map(function() {
     this.resource('users', function() {
         this.resource('dribbles', {path: 'dribbles'}, function() {
-            this.route('dribble', {path: 'dribble/:_id'});
+            this.route('dribble');
         });
     });
+    this.route('dribbles');
 });
 
 export default Router;

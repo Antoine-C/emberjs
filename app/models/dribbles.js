@@ -1,7 +1,7 @@
 import DS from 'ember-data';
 
 var Dribbles = DS.Model.extend({
-    isAsctive: DS.attr('boolean'),
+    isNew: DS.attr('boolean'),
     picture: DS.attr('string'),
     name: DS.attr('string'),
     gender: DS.attr('string'),
@@ -14,8 +14,8 @@ Dribbles.reopenClass({
    FIXTURES: [
        {
            "id": "1",
-           "isActive": false,
-           "picture": "http://placehold.it/64x64",
+           "isNew": false,
+           "picture": "http://placehold.it/250x150",
            "name": "Adeline Murphy",
            "gender": "female",
            "company": "MEDALERT",
@@ -24,8 +24,8 @@ Dribbles.reopenClass({
        },
        {
            "id": "2",
-           "isActive": true,
-           "picture": "http://placehold.it/64x64",
+           "isNew": true,
+           "picture": "http://placehold.it/250x150",
            "name": "Evangelina Knapp",
            "gender": "female",
            "company": "BUZZNESS",
@@ -34,8 +34,8 @@ Dribbles.reopenClass({
        },
        {
            "id": "3",
-           "isActive": true,
-           "picture": "http://placehold.it/64x64",
+           "isNew": true,
+           "picture": "http://placehold.it/250x150",
            "name": "Kelly Parker",
            "gender": "male",
            "company": "EXOSPEED",
@@ -44,8 +44,8 @@ Dribbles.reopenClass({
        },
        {
            "id": "4",
-           "isActive": true,
-           "picture": "http://placehold.it/64x64",
+           "isNew": true,
+           "picture": "http://placehold.it/250x150",
            "name": "Mccall Yang",
            "gender": "male",
            "company": "PETICULAR",
@@ -54,8 +54,8 @@ Dribbles.reopenClass({
        },
        {
            "id": "5 ",
-           "isActive": false,
-           "picture": "http://placehold.it/64x64",
+           "isNew": false,
+           "picture": "http://placehold.it/250x150",
            "name": "Barlow Dean",
            "gender": "male",
            "company": "BULLJUICE",
