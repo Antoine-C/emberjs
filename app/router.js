@@ -11,7 +11,8 @@ Router.map(function() {
             this.route('dribble');
         });
     });
-    this.route('dribbles');
+    this.resource('dribbles');
+    this.resource('dribble', {path: '/dribble/:dribble_id'});
 });
 
 export default Router;
