@@ -13,6 +13,7 @@ User.reopenClass({
      {
         "id": 1,
         "name": "Adeline Murphy",
+        "picture": "http://placehold.it/150x150",
         "gender": "female",
         "company": "MEDALERT",
         "email": "adelinemurphy@medalert.com",
@@ -21,6 +22,7 @@ User.reopenClass({
      { 
         "id": 2,
         "name": "Evangelina Knapp",
+        "picture": "http://placehold.it/150x150",
         "gender": "female",
         "company": "BUZZNESS",
         "email": "evangelinaknapp@buzzness.com",
@@ -29,6 +31,7 @@ User.reopenClass({
      {
         "id": 3,
         "name": "Mccall Yang",
+        "picture": "http://placehold.it/150x150",
         "gender": "male",
         "company": "PETICULAR",
         "email": "mccallyang@peticular.com",
@@ -37,6 +40,7 @@ User.reopenClass({
      {
         "id": 4,
         "name": "Barlow Dean",
+        "picture": "http://placehold.it/150x150",
         "gender": "male",
         "company": "BULLJUICE",
         "email": "barlowdean@bulljuice.com",
