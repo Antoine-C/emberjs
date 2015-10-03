@@ -5,5 +5,7 @@
   <h2>About the author</h2>
   <p>Name : {{model.user.name}}</p>
   <p>Email : {{model.user.email}}</p>
-  {{#link-to 'user' model.user}}See his profil{{/link-to}}
+  {{#link-to 'user' model.user}}
+    See {{set-gender model.user.gender}} profil
+  {{/link-to}}
 </div>
