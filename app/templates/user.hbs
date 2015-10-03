@@ -1,0 +1,21 @@
+<div class="large-6 small-12 columns">
+  <img src="{{model.picture}}">
+</div> 
+<div class="large-6 small-12 columns">
+  <h2>About this fella</h2>
+  <p>Name : {{model.user.name}}</p>
+  <p>Company : {{model.user.company}}</p>
+  <p>Email : {{model.user.email}}</p>
+  <p>Address: : {{model.user.address}}</p>
+</div>
+
+<h2>His dribbles</h2>
+<div class="row">
+  {{#each dribbles as |dribble|}}
+      {{#link-to 'dribble' dribble}}
+        <div class="large-3 small-6 columns">
+            <img src="{{dribble.picture}}">
+        </div>
+      {{/link-to}}
+  {{/each}}
+</div>

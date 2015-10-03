@@ -5,7 +5,8 @@ var User = DS.Model.extend({
     gender: DS.attr('string'),
     company: DS.attr('string'),
     email: DS.attr('string'),
-    address: DS.attr('string')
+    address: DS.attr('string'),
+    dribbles: DS.hasMany('dribbles', {async: true})
 });
 
 User.reopenClass({
