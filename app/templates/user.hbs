@@ -2,14 +2,14 @@
   <img src="{{model.picture}}">
 </div> 
 <div class="large-6 small-12 columns">
-  <h2>About this fella</h2>
-  <p>Name : {{model.user.name}}</p>
-  <p>Company : {{model.user.company}}</p>
-  <p>Email : {{model.user.email}}</p>
-  <p>Address: : {{model.user.address}}</p>
+  <h2>About {{set-gender user.gender}}</h2>
+  <p>Name : {{user.name}}</p>
+  <p>Company : {{user.company}}</p>
+  <p>Email : {{user.email}}</p>
+  <p>Address: : {{user.address}}</p>
 </div>
 
-<h2>His dribbles</h2>
+<h2>{{set-gender model.user.gender}} dribbles</h2>
 <div class="row">
   {{#each dribbles as |dribble|}}
       {{#link-to 'dribble' dribble}}
